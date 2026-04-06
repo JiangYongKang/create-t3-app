@@ -17,6 +17,7 @@ export default function Collapsible({
   return (
     <div className="my-4 w-full rounded-lg border border-t3-purple-200/20 bg-t3-purple-200/5 dark:bg-t3-purple-200/10">
       <button
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between px-4 py-3 text-left font-medium transition-colors hover:bg-t3-purple-200/10 dark:hover:bg-t3-purple-200/20"
         aria-expanded={isOpen}
