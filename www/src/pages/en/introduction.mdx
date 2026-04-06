@@ -6,8 +6,14 @@ lang: en
 ---
 
 import { IntroductionTab } from "../../components/docs/introductionTab";
+import Collapsible from "../../components/docs/collapsible";
 
 <IntroductionTab client:load />
+
+<Collapsible title="What does T3 stand for?" client:load>
+  The "T3" in T3 Stack stands for **T**ypeScript, **T**ailwind, and **t**RPC. These three technologies form the core foundation of the stack, though you can swap out pieces as needed for your project.
+</Collapsible>
+
 ## The T3 Stack
 
 The _"T3 Stack"_ is a web development stack made by [Theo](https://twitter.com/t3dotgg) focused on simplicity, modularity, and full-stack typesafety.
