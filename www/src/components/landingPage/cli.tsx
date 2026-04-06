@@ -3,11 +3,11 @@ import Typist from "react-typist";
 
 export default function CodeCard() {
   return (
-    <div
-      className="mx-auto w-full overflow-hidden rounded-lg sm:w-[600px]"
-      aria-hidden="true"
-    >
-      <div className="inverse-toggle h-[300px] overflow-hidden rounded-lg border border-t3-purple-200/20 bg-white/10 px-1 pb-6 pt-4 font-mono text-[10px] leading-normal text-t3-purple-50 subpixel-antialiased shadow-lg transition-all sm:h-[400px] sm:px-2 sm:text-xs md:px-5">
+    <div className="mx-auto w-full overflow-hidden rounded-lg sm:w-[600px]">
+      <div
+        className="inverse-toggle h-[300px] overflow-hidden rounded-lg border border-t3-purple-200/20 bg-white/10 px-1 pb-6 pt-4 font-mono text-[10px] leading-normal text-t3-purple-50 subpixel-antialiased shadow-lg transition-all sm:h-[400px] sm:px-2 sm:text-xs md:px-5"
+        aria-hidden="true"
+      >
         <div className="top mb-2 flex">
           <div className="h-3 w-3 rounded-full bg-red-500"></div>
           <div className="ml-2 h-3 w-3 rounded-full bg-orange-300"></div>
@@ -187,6 +187,21 @@ export default function CodeCard() {
         >
           Alright. We&apos;ll install the dependencies for you!
         </Typist>
+      </div>
+      <div className="sr-only">
+        <p>
+          To create a new T3 App, run: <code>npm create t3-app@latest</code>
+        </p>
+        <p>
+          The CLI will guide you through selecting options including:
+        </p>
+        <ul>
+          <li>Project name</li>
+          <li>TypeScript or JavaScript</li>
+          <li>Packages: nextAuth, prisma, tailwind, trpc</li>
+          <li>Git repository initialization</li>
+          <li>Dependency installation</li>
+        </ul>
       </div>
     </div>
   );
